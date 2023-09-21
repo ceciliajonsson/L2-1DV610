@@ -1,4 +1,4 @@
-export class TextAverages {
+class TextAverages {
 
     static averageWordLength(text) {
         let words = text.toLowerCase().split(/\s+/)
@@ -25,3 +25,5 @@ export class TextAverages {
         return Math.round(averageSentenceWords * 100) / 100 
     }
 }
+
+module.exports = { TextAverages }
