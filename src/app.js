@@ -14,7 +14,8 @@ try {
     console.log("Validated Text:", validatedText);
     console.log(" ")
     console.log("----- Text Character Count -----")
-    console.log("Characters Count:", TextCounter.countCharacters(validatedText));
+    console.log("Characters Count Inc. Spaces:", TextCounter.countCharactersIncSpaces(validatedText));
+    console.log("Characters Count Exc. Spaces:", TextCounter.countCharactersExcSpaces(validatedText));
     console.log("Letter Count:", TextCounter.countLetters(validatedText));
     console.log("Word Count:", TextCounter.countWords(validatedText));
     console.log("Sentence Count:", TextCounter.countSentences(validatedText));
