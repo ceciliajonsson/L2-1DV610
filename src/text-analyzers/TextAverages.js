@@ -1,4 +1,4 @@
-class TextAverages {
+export class TextAverages {
 
     static averageWordLength(text) {
         let words = text.toLowerCase().split(/\s+/)
@@ -26,4 +26,3 @@ class TextAverages {
     }
 }
 
-module.exports = { TextAverages }

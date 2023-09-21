@@ -1,4 +1,4 @@
-const TextAverages = require("../src/text-analyzers/TextAverages").TextAverages;
+import { TextAverages } from '../src/text-analyzers/TextAverages'
 
 describe("TextAverages", () => {
     describe("averageWordLength", () => {

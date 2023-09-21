@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/ceciliajonsson/L2-1DV610/issues"
   },
-  "homepage": "https://github.com/ceciliajonsson/L2-1DV610#readme"
+  "homepage": "https://github.com/ceciliajonsson/L2-1DV610#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
 }
