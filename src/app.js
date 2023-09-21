@@ -2,10 +2,12 @@ import { TextInputValidator } from './text-analyzers/TextInputValidator.js'
 import { TextCounter } from './text-analyzers/TextCounter.js'
 import { TextAverages } from './text-analyzers/TextAverages.js'
 import { TextFrequency } from './text-analyzers/TextFrequency.js'
+import { TextManipulator } from './text-analyzers/TextManipulator.js'
 
 
-// & Change this so it is a process argv
-const text = "Hello there, John! It's amazing to see you for the 3rd times! Wow, our 2023 is coming to an end... isn't it, John?!"
+
+// & Change this so it is a process argv or default text below
+const text = "Hello there, John! It's amazing to see you for the 3rd times! Wow, our 2023 is coming to an end... isn't it amazing, John?!"
 const validateText = new TextInputValidator(text)
 
 try {
@@ -30,8 +32,16 @@ try {
     console.log("Most Used Numbers:", TextFrequency.mostUsedNumbers(validatedText));
     console.log("Most Used Pronouns:", TextFrequency.mostUsedPronouns(validatedText));
     console.log(" ")
+    console.log("----- Text Manipulation -----")
+    console.log("Replace Word:", TextManipulator.replaceWord(validatedText, "amazing", "great"));
+    console.log("Replace Symbol:", TextManipulator.replaceSymbol(validatedText, "!", "?"));
+    console.log("Replace Number:", TextManipulator.replaceNumber(validatedText, 3, 23));
+    console.log("Reverse Text:", TextManipulator.reverseText(validatedText));
+    console.log("Reverse Sentences:", TextManipulator.reverseSentences(validatedText));
+
     
 
 } catch (error) {
     console.error(error.message)
 }
+
