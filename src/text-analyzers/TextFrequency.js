@@ -21,17 +21,21 @@ static mostUsedLetters(text, topFive = 5) {
 
 // ^ Should 'List' be used in this context?
 // ^ Solving the Two Arguments another way here
+// ^ Edit: I Edited the Code so that Numbers weren't counted. The naming "mostUsedNumbers" was misleading as it also included numbers.
  static mostUsedWords(text) {
     let words = text.toLowerCase().split(/\W+/)
     let wordFrequencyList = {}
 
-    for (let word of words) {
+  for (let word of words) {
+    if (!/^\d+$/.test(word) && word !== '') {
       if (wordFrequencyList[word]) {
         wordFrequencyList[word]++
       } else {
         wordFrequencyList[word] = 1
       }
     }
+  }
+
 
     let sortWords = Object.entries(wordFrequencyList).sort((a, b) => b[1] - a[1])
     return sortWords.slice(0, 5)
