@@ -4,8 +4,6 @@ import { TextAverages } from './text-analyzers/TextAverages.js'
 import { TextFrequency } from './text-analyzers/TextFrequency.js'
 import { TextManipulator } from './text-analyzers/TextManipulator.js'
 
-
-
 // & Change this so it is a process argv or default text below
 const text = "Hello there, John! It's amazing to see you for the 3rd times! Wow, our 2023 is coming to an end... isn't it amazing, John?!"
 const validateText = new TextInputValidator(text)
@@ -20,6 +18,9 @@ try {
     console.log("Letter Count:", TextCounter.countLetters(validatedText));
     console.log("Word Count:", TextCounter.countWords(validatedText));
     console.log("Sentence Count:", TextCounter.countSentences(validatedText));
+    console.log("Paragraph Count:", TextCounter.countParagraphs(validatedText));
+    console.log("Vowel Count:", TextCounter.countVowels(validatedText));
+    console.log("Consonant Count:", TextCounter.countConsonants(validatedText));
     console.log(" ")
     console.log("----- Text Averages -----")
     console.log("Average Word Length:", TextAverages.averageWordLength(validatedText));
@@ -44,4 +45,3 @@ try {
 } catch (error) {
     console.error(error.message)
 }
-

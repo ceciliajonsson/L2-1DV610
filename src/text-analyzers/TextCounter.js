@@ -21,6 +21,20 @@ export class TextCounter {
         let sentences = text.split(/[.!?]/)
         return sentences.length 
     }
+    static countParagraphs(text) {
+        let paragraphs = text.split(/\n/)
+        return paragraphs.length
+    }
+    static countVowels(text) {
+        let vowels = text.match(/[aeiouåäö]/gi)
+        return vowels.length
+    }
+
+    static countConsonants(text) {
+        let consonants = text.match(/[bcdfghjklmnpqrstvwxz]/gi)
+        return consonants.length
+    }
+    
 }
 
 
