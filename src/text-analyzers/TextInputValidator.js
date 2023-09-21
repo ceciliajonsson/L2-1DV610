@@ -24,7 +24,7 @@ export class TextInputValidator {
   }
   // ^ Validate Charecthers better name - Not obvious what it does
   validateInput() {
-    const validCharacters = /^[a-zA-Z0-9\s.!?,]+$/
+    const validCharacters = /^[a-zA-Z0-9\s.!?,']+$/
     if (!validCharacters.test(this.text)) {
       throw new Error("Input contains invalid characters!")
     }
