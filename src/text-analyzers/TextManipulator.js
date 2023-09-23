@@ -8,7 +8,7 @@ export class TextManipulator {
         }
 
         // Check if the wordToReplace and wordToReplaceWith are non-empty strings
-        if (!wordToReplace.length === 0 || !wordToReplaceWith.length === 0) {
+        if (wordToReplace.length === 0 || wordToReplaceWith.length === 0) {
             throw new Error("Both wordToReplace and wordToReplaceWith must be non-empty strings.")
         }
         return text.replace(new RegExp('\\b' + wordToReplace + '\\b', 'gi'), wordToReplaceWith)
