@@ -1,4 +1,4 @@
-import { TextFrequency } from "../src/text-analyzers/TextFrequency"
+import { TextFrequency } from "../src/text-checkers/TextFrequency"
 
 describe('TextFrequency', () => {
   const sampleText = "3 quick brown foxes jumped over 1 lazy dog. They were quick! The 3 foxes then went home."

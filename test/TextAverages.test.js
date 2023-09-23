@@ -1,4 +1,4 @@
-import { TextAverages } from '../src/text-analyzers/TextAverages'
+import { TextAverages } from '../src/text-checkers/TextAverages'
 
 describe("TextAverages", () => {
     describe("averageWordLength", () => {

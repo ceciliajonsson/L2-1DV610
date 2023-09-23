@@ -1,4 +1,4 @@
-import { TextCounter } from "../src/text-analyzers/TextCounter"
+import { TextCounter } from "../src/text-checkers/TextCounter"
 
 describe('TextCounter', () => {
 

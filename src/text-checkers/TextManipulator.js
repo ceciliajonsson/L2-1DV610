@@ -43,6 +43,10 @@ export class TextManipulator {
         let sentences = text.match(/[^.!?]+[.!?]/g) || []
         sentences = sentences.reverse()
 
+        // If the text is empty or doesn't contain !?., send 'Hello World' back
+        if (text.match(/[^.!?]+[.!?]/g) === null) {
+            return 'Couldn\'t find any sentences in the text.'}
+        
         for (let i = 0; i < sentences.length; i++) {
             sentences[i] = sentences[i].replace(' ,', ',')
 

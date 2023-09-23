@@ -1,4 +1,4 @@
-import { TextInputValidator } from "../src/text-analyzers/TextInputValidator"
+import { TextInputValidator } from "../src/text-checkers/TextInputValidator"
 
 describe('TextInputValidator', () => {
   it('should validate length and content, remove additional spaces and return validated text', () => {
