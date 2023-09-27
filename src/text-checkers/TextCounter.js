@@ -15,8 +15,6 @@ export class TextCounter {
         return count;
     }
 
-    // ^ Confusing wording - do we mean how many Letters are present or Each letter?
-    // ^ We mean each letter but the wording is confusing
     static countLetters(text) {
         let letters = text.split('')
         let count = 0

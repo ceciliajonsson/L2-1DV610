@@ -10,10 +10,9 @@ This module can give you insights on character counts, averages, frequencies and
 2. Installation Guide
 3. Usage & Code Examples
 4. Dependencies
-5. Test Report
-6. Issues & Bug Reports
-7. License
-8. Contributing
+5. Issues & Bug Reports
+6. License
+7. Contributing
 
 ## 1. Features
 * Text Validation: Ensure that the input text meets certain criteria before processing.
@@ -96,34 +95,12 @@ Expected Output: Hello, it is 2024!
 ## 4. Dependencies
 * Node.js: v18.8.0 (or newer)
 
-## 5. Test Report
-### Overview
-All unit tests for the text-checking modules have been executed successfully without any failures.
-
-#### Test Execution Details
-##### TextAverages
-Two different tests for counting the average word and senrence length: Successful
-##### TextCounter
-Eight different tests for counting characters (with and without spaces), letters, words, sentences, paragraphs, vowels, and consonants: Successful
-##### TextFrequency
-Five different tests for determining the most used letters, words, symbols, numbers, and pronouns: Successful
-##### TextInputValidator
-Tests for input validation including length and content checks, removal of additional spaces, and retrieval of validated text: Successful
-##### TextManipulator
-Nine tests for text manipulation functions like replacing words, symbols, and numbers, as well as reversing the entire text and reversing the order of sentences: Successful
-
-Test Status: All Passed
-
-All tests for the modules passed successfully.
-Continuous testing is recommended as more features or changes are introduced.
-
-
-## 6. Issues & Bug Reports
+## 5. Issues & Bug Reports
 Please see: [Issues Link](https://github.com/ceciliajonsson/L2-1DV610/issues)
 
-## 7. License
+## 6. License
 This project is open source, licensed under the MIT License. 
 Check out the LICENSE file for more details.
 
-## 8. Contributing
+## 7. Contributing
 Please get in contact with Cecilia if you want to contribute to the project.

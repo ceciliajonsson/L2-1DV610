@@ -1,7 +1,6 @@
 export class TextFrequency {
   
 
-// ^ Should 'List' be used in this context?
 // ^ Two arguments - Not good to have two arguments.
 static mostUsedLetters(text, topFive = 5) {
     let letters = text.replace(/[^a-z]/gi, '').toLowerCase().split('')
@@ -19,7 +18,6 @@ static mostUsedLetters(text, topFive = 5) {
     return sortedLetters.slice(0, topFive)
 }
 
-// ^ Should 'List' be used in this context?
 // ^ Solving the Two Arguments another way here
 // ^ Edit: I Edited the Code so that Numbers weren't counted. The naming "mostUsedNumbers" was misleading as it also included numbers.
  static mostUsedWords(text) {
