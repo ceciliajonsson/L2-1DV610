@@ -12,7 +12,7 @@ export class TextCounter {
                 count++
             }
         }
-        return count;
+        return count
     }
 
     static countLetters(text) {
