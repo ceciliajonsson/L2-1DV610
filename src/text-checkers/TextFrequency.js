@@ -1,7 +1,5 @@
 export class TextFrequency {
   
-
-// ^ Two arguments - Not good to have two arguments.
 static mostUsedLetters(text, topFive = 5) {
     let letters = text.replace(/[^a-z]/gi, '').toLowerCase().split('')
     let letterFrequencyList = {}
@@ -18,8 +16,6 @@ static mostUsedLetters(text, topFive = 5) {
     return sortedLetters.slice(0, topFive)
 }
 
-// ^ Solving the Two Arguments another way here
-// ^ Edit: I Edited the Code so that Numbers weren't counted. The naming "mostUsedNumbers" was misleading as it also included numbers.
  static mostUsedWords(text) {
     let words = text.toLowerCase().split(/\W+/)
     let wordFrequencyList = {}
@@ -33,8 +29,6 @@ static mostUsedLetters(text, topFive = 5) {
       }
     }
   }
-
-
     let sortWords = Object.entries(wordFrequencyList).sort((a, b) => b[1] - a[1])
     return sortWords.slice(0, 5)
 }

@@ -1,6 +1,5 @@
 export class TextManipulator {
 
-    // ^ Multiple arguments - Not good to have multiple arguments  
     static replaceWord(text, wordToReplace, wordToReplaceWith) {
         // Check if the provided arguments are strings
         if (typeof text !== 'string' || typeof wordToReplace !== 'string' || typeof wordToReplaceWith !== 'string') {
@@ -14,7 +13,6 @@ export class TextManipulator {
         return text.replace(new RegExp('\\b' + wordToReplace + '\\b', 'gi'), wordToReplaceWith)
 
     }
-    // ^ Multiple arguments - Not good to have multiple arguments  
      static replaceSymbol(text, symbolToReplace, symbolToReplaceWith) {
         const allowedSymbols = ['.', ',', '!', '?', "'"]
         
@@ -25,7 +23,6 @@ export class TextManipulator {
         return text.replace(new RegExp('\\' + symbolToReplace, 'g'), symbolToReplaceWith)
     }
 
-    // ^ Multiple arguments - Not good to have multiple arguments  
     static replaceNumber(text, numberToReplace, numberToReplaceWith) {
         if (typeof numberToReplace !== 'number' || typeof numberToReplaceWith !== 'number') {
             throw new TypeError("Both arguments must be of type number.")

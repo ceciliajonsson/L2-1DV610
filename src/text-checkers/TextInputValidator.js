@@ -3,8 +3,6 @@ export class TextInputValidator {
     this.text = text
   }
 
-    // ^ Does two things - Can be renamed to better vapture or Split it up to two methods
-    // ^ Don't be cute - cute eller hunourous
   validateLength() {
     if (this.text.length === 0) {
       throw new Error("Input is empty!")
@@ -13,7 +11,6 @@ export class TextInputValidator {
       throw new Error("Input is too long!")
     }    
   }
-  // ^ Validate Charecthers better name - Not obvious what it does
   validateInput() {
     const validCharacters = /^[a-zA-Z0-9\s.!?,']+$/
     if (!validCharacters.test(this.text)) {
@@ -21,7 +18,6 @@ export class TextInputValidator {
     }
   }
 
-  // ^ Replaces multiple spaces with a single space + Trim (removes spaces at the beginning and end of the string)
   removeAdditionalSpaces() {
     this.text = this.text.replace(/\s+/g, ' ').trim()
   }
