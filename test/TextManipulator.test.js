@@ -1,4 +1,4 @@
-import { TextManipulator } from '../src/text-checkers/TextManipulator' // Adjust the import path accordingly
+import { TextManipulator } from '../src/text-checkers/TextManipulator'
 
 describe('TextManipulator', () => {
 
